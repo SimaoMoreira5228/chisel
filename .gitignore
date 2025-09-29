@@ -1,0 +1,4 @@
+**/forge-out
+/temp
+.vscode
+example/dist

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{title}} - {{site_name}}</title>
+    <style>
+      body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;max-width:60ch;margin:2rem auto;color:#111}
+      header,footer{opacity:.8;text-align:center}
+      .post-title{margin-top:0}
+      .meta{color:#666;font-size:.9rem}
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/">{{site_name}}</a>
+    </header>
+
+    <main>
+      <article>
+        <h1 class="post-title">{{title}}</h1>
+        {{#if date}}<div class="meta">{{date}}</div>{{/if}}
+        <div class="post-body">{{content}}</div>
+      </article>
+    </main>
+
+    <footer>
+      <small>&copy; {{year}} {{site_name}}</small>
+    </footer>
+  </body>
+</html>
